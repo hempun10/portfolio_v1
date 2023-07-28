@@ -27,6 +27,7 @@ const FindMe = ({
       <Paragraph text={text} className={(cn("w-full"), classNameFromAbout)} />
       {data.map((icon) => (
         <IconButton
+          key={icon.href}
           icon={icon.icon}
           href={icon.href}
           className={classNameForbtn}
