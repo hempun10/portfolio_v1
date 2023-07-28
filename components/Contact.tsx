@@ -8,7 +8,7 @@ import IconButton from "./ui/icon-button";
 const Contact = () => {
   return (
     <div className=" bg-white " id="contact">
-      <Container className={"p-[2rem] flex gap-5"}>
+      <Container className={"p-[2rem] flex gap-[2rem] flex-col sm:flex-row"}>
         <div>
           <Heading text="Contact Me" className={"text-3xl text-textBlue"} />
           <Paragraph
