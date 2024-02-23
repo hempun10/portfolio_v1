@@ -1,7 +1,6 @@
 import React from "react";
 import Paragraph from "./ui/paragraph";
 import IconButton from "./ui/icon-button";
-import { icons } from "react-icons";
 import { cn } from "@/libs/utils";
 
 interface FindMeLinkProps {
