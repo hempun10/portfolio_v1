@@ -12,7 +12,7 @@ const dmSans = DM_Sans({
   style: ["normal", "italic"],
 });
 
-export const metadat: Metadata = {
+export const metadata: Metadata = {
   title: "Hem Bahadur Pun",
   description: "Front-end engineer based in Nepal",
   keywords: META_KEYWORDS,
