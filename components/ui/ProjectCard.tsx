@@ -14,7 +14,8 @@ interface ProjectCardProps {
   previewLink: string;
   codeLink: string;
   paragraph: string;
-  className: any;
+  className: string;
+  displayTwoLinks?: boolean;
 }
 
 const ProjectCard = ({
@@ -25,6 +26,7 @@ const ProjectCard = ({
   previewLink,
   codeLink,
   className,
+  displayTwoLinks = false,
 }: ProjectCardProps) => {
   return (
     <Container
@@ -62,6 +64,7 @@ const ProjectCard = ({
           <FlexConatiner data={tag} />
           <FlexConatiner
             isLink={true}
+            displayTwoLinks={displayTwoLinks}
             previewLink={previewLink}
             codeLink={codeLink}
           />

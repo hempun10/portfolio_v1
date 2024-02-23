@@ -10,7 +10,8 @@ import {
   BiLogoTypescript,
 } from "react-icons/bi";
 import { TbApi } from "react-icons/tb";
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiTrpc } from "react-icons/si";
+import { FaMapLocationDot, FaNode } from "react-icons/fa6";
 
 const Project = () => {
   return (
@@ -36,6 +37,7 @@ const Project = () => {
             ]}
             className={"order-1"}
           />
+
           <ProjectCard
             heading="Netflix UI Clone"
             paragraph="For this project, I successfully created a realistic clone of the Netflix user interface using React, TMDB API, and Tailwind CSS. By leveraging React's component-based architecture, I built a dynamic and interactive frontend that allows users to explore a wide range of movies. The TMDB API integration enabled me to fetch real movie data, including titles, descriptions, and posters."
@@ -63,6 +65,23 @@ Introducing a feature-rich eCommerce website that optimizes the user shopping ex
               { tech: "Fake Store", icon: <TbApi /> },
             ]}
             className={"order-1"}
+          />
+          <ProjectCard
+            heading="Delivery Web App & Admin Dashboard"
+            paragraph="
+            A delivery web app and admin dashboard that streamlines the delivery process, ensuring a seamless experience for both customers and delivery personnel. The web app is designed to provide a user-friendly interface for customers to place orders,and provide feedback. The admin dashboard is equipped with powerful features to manage orders, add products , user managment and monitor customer feedback. 
+            "
+            imageUrl="/project-4.png"
+            displayTwoLinks={true}
+            previewLink="https://dokodelivery-web-demo.vercel.app/"
+            codeLink="https://dokodelivery-adminpannel-demo.vercel.app/"
+            tag={[
+              { tech: "NextJS", icon: <SiNextdotjs /> },
+              { tech: "Google Maps", icon: <FaMapLocationDot /> },
+              { tech: "Node", icon: <FaNode /> },
+              { tech: "trpC", icon: <SiTrpc /> },
+            ]}
+            className={"order-2"}
           />
         </div>
       </Container>

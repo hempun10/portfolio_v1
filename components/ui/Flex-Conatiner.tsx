@@ -8,6 +8,7 @@ interface TechStackProps {
   isLink?: boolean;
   previewLink?: string;
   codeLink?: string;
+  displayTwoLinks?: boolean;
 }
 
 const FlexContainer = ({
@@ -15,6 +16,7 @@ const FlexContainer = ({
   isLink = false,
   previewLink = "#",
   codeLink = "#",
+  displayTwoLinks = false,
 }: TechStackProps) => {
   return (
     <div className="my-5 mx-auto flex gap-5">
@@ -26,18 +28,30 @@ const FlexContainer = ({
             className=" bg-whiteSmoke p-3 rounded-lg cursor-pointer"
           >
             <p className="flex items-center gap-3 text-lg">
-              Live Preview <BsBoxArrowUpRight />
+              Project Preview <BsBoxArrowUpRight />
             </p>
           </Link>
-          <Link
-            href={codeLink}
-            target="_blank"
-            className=" bg-whiteSmoke p-3 rounded-lg cursor-pointer"
-          >
-            <p className="flex items-center gap-3 text-lg">
-              Code <BsGithub />
-            </p>
-          </Link>
+          {displayTwoLinks ? (
+            <Link
+              href={codeLink}
+              target="_blank"
+              className=" bg-whiteSmoke p-3 rounded-lg cursor-pointer"
+            >
+              <p className="flex items-center gap-3 text-lg">
+                Dashboard <BsBoxArrowUpRight />
+              </p>
+            </Link>
+          ) : (
+            <Link
+              href={codeLink}
+              target="_blank"
+              className=" bg-whiteSmoke p-3 rounded-lg cursor-pointer"
+            >
+              <p className="flex items-center gap-3 text-lg">
+                Code <BsGithub />
+              </p>
+            </Link>
+          )}
         </>
       ) : (
         <div className=" flex  gap-3 items-center text-xl flex-wrap justify-center">
