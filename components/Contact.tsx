@@ -27,7 +27,7 @@ const Contact = () => {
               target="_blank"
               className=" hover:text-textBlue transition-all"
             >
-              hemthegentlemen@gmail.com
+             hembdrpun10@gmail.com
             </a>
           </div>
         </div>
